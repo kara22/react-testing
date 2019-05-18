@@ -8,6 +8,7 @@ import Root from "Root";
 
 let component;
 
+// before each test run this code
 beforeEach(() => {
     component = mount(
         <Root>
@@ -16,6 +17,7 @@ beforeEach(() => {
     );
 });
 
+// after each test run this code
 afterEach(() => {
     component.unmount();
 });
