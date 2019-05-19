@@ -22,12 +22,12 @@ afterEach(() => {
     component.unmount();
 });
 
-it("has a text area and a button", () => {
+it("has a text area and 2 buttons", () => {
     expect(component.find("textarea").length).toEqual(1);
-    expect(component.find("button").length).toEqual(1);
+    expect(component.find("button").length).toEqual(2);
 });
 
-// function to make another beforeEach inside
+// block to make another beforeEach inside
 describe(" the text area", () => {
     beforeEach(() => {
         component.find("textarea").simulate("change", {
